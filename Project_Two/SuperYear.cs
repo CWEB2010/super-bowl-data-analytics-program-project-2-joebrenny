@@ -48,9 +48,9 @@ namespace Project_Two
 
         }
         //attenpt to get the file into objects
-        public SuperYear(string line)
+        public SuperYear(string[] line)
         {
-            var split = line.Split(',');
+            var split = line;//.Split(',');
 
             date = split[0];
             sbNum = split[1];
@@ -67,11 +67,12 @@ namespace Project_Two
             stadium = split[12];
             city = split[13];
             state = split[14];
-
-
-
-
         }
+        public override string ToString()
+        {
+            return string.Format($"date:{date}");
+        }
+
 
     }
 }

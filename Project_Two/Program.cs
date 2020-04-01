@@ -2,6 +2,8 @@
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+
 
 
 
@@ -12,11 +14,49 @@ namespace Project_Two
     class Program
     {
         static void Main(string[] args)
+            //filepath is a functiont to find file path on his computer
         {
-            
-            List<object> listOfSuperBowl = new List<object>();
+            const string PATH = @"C:\Users\brejosj\Desktop\spring2020\advancedPrograming\superBowl\Project_Two\Super_Bowl_Project.csv";
 
-            var listOfSuperBowls = File.ReadLines(@"C:\Users\brejosj\Desktop\spring2020\advancedPrograming\superBowl\Project_Two\sbp.csv").Select(line => new SuperYear(line)).ToList();
+            FileStream input;
+            StreamReader read;
+            string line;
+            string []data;
+            try
+            {
+                input = new FileStream(PATH, FileMode.Open, FileAccess.Read);
+                read = new StreamReader(input);
+                List<SuperYear> sblist = new List<SuperYear>();
+                                            //.Skip(1);
+                                          //.Select(v => sblist.SuperYear(v));
+                                            //.Tolist;
+
+                line = read.ReadLine();
+                while (!read.EndOfStream)
+                {
+                    data = read.ReadLine().Split(',');
+
+                    //SuperYear(data);
+                    //passing each line into my over loaded contrutor
+                    sblist.Add(new SuperYear(data));
+                    //using contruct and passing in each feild
+                    //sblist.Add(new SuperYear(data[0],data[1], Convert.ToInt32(data[2]),data[3],data[4],data[5], 
+                    //   Convert.ToInt32(data[6]),data[7],data[8], data[9], Convert.ToInt32(data[10]),data[11],data[12],data[13]
+                    //   ,data[14]));
+                }
+                sblist.ForEach(x => Console.WriteLine(x.ToString()));
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+
+            //List<object> listOfSuperBowl = new List<object>();
+
+            //var listOfSuperBowls = File.ReadLines(PATH).Select(line => new SuperYear(line)).ToList();
+
+
             /**Your application should allow the end user to pass end a file path for output 
             * or guide them through generating the file.
             **/
@@ -28,6 +68,6 @@ namespace Project_Two
             //    Console.WriteLine(files[i]);
             //}
             //first neeed to connect to this file and use file to make objects 
-        }   
+        }//end of main    
     }
 }
