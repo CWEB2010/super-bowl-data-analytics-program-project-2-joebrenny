@@ -21,7 +21,22 @@ namespace Project_Two
             FileStream input;
             StreamReader read;
             string line;
-            string []data;
+            string[] data;
+            string path = "";
+            string textFile = "";
+            // intro
+           Console.WriteLine("welcome to the super bowl porgram");
+            //finding the file for the cvs
+            Console.WriteLine("What file path extension would like to read in (.cvs)");
+            string Path = Console.ReadLine();
+            Console.WriteLine(textFile);
+
+            Console.WriteLine("\nWhat file path do you want it to be written in (.txt)");
+             path = @Console.ReadLine();
+            Console.WriteLine(path);
+
+
+
             try
             {
                 input = new FileStream(PATH, FileMode.Open, FileAccess.Read);
@@ -45,14 +60,22 @@ namespace Project_Two
                     //   ,data[14]));
                 }
                 //checking to make sure that my data is objects
-                sblist.ForEach(x => Console.WriteLine(
-                     x.ToString()));
+                sblist.ForEach(x => Console.WriteLine(x.ToString()));
+                
             }
             catch(Exception e)
             {
                 Console.WriteLine(e.Message);
             }
+            //superbolw winners write
+            using (StreamWriter file = File.CreateText("test.txt"))
+            {
+                Console.WriteLine("\n QUESTION ONE");
+                file.WriteLine("\n QUestion 1 SUPER BOWL WINNERS");
 
+                file.WriteLine("TEAM NAME" + "\t\t" + "Year WON" + "\t\t"+ "WINNING QB"+" \t\t"+
+                   "WINNING Coach" + "\t\t" + "MVP" + "point difference");
+            }
 
             //List<object> listOfSuperBowl = new List<object>();
 
