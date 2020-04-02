@@ -44,7 +44,9 @@ namespace Project_Two
                     //   Convert.ToInt32(data[6]),data[7],data[8], data[9], Convert.ToInt32(data[10]),data[11],data[12],data[13]
                     //   ,data[14]));
                 }
-                sblist.ForEach(x => Console.WriteLine(x.ToString()));
+                //checking to make sure that my data is objects
+                sblist.ForEach(x => Console.WriteLine(
+                     x.ToString()));
             }
             catch(Exception e)
             {

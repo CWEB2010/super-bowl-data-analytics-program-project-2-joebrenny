@@ -70,7 +70,10 @@ namespace Project_Two
         }
         public override string ToString()
         {
-            return string.Format($"date:{date}");
+            return string.Format($"date:{date}\n  Number: {sbNum}\n  attendance: {attendance}\n QB WInner:{qb_Winner}\n" +
+                $"CoachWinner:{coachWinner}\n Winning Team: {winningTeam}\n Winning Points: {winningPoints}\n  QB Loser: {qbLoser}\n" +
+                $"coach Loser: {coachLoser}\n teamLoser: {teamLoser}\n loser Points: {loserPoints}\n MVP: {mvp}\n" +
+                $"STADIUM: {stadium}\n CITY: {city}\n STATE: {state}\n\n\n");
         }
 
 
