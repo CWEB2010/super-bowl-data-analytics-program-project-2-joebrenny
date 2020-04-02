@@ -4,25 +4,25 @@ using System.Text;
 
 namespace Project_Two
 {
-    class SuperYear
+    public class SuperYear
     {
-        string date;
-        string sbNum;
-        int attendance;
-        string qb_Winner;
-        string coachWinner;
-        string winningTeam;
-        int winningPoints;
-        string qbLoser;
-        string coachLoser;
-        string teamLoser;
-        int loserPoints;
-        string mvp;
-        string stadium;
-        string city;
-        string state;
+        public string date;
+        public string sbNum;
+        public int attendance;
+        public string qb_Winner;
+        public  string coachWinner;
+        public string winningTeam;
+        public int winningPoints;
+        public string qbLoser;
+        public string coachLoser;
+        public string teamLoser;
+        public int loserPoints;
+        public string mvp;
+        public string stadium;
+        public string city;
+        public string state;
 
-        SuperYear()
+        public SuperYear()
         {
 
         }

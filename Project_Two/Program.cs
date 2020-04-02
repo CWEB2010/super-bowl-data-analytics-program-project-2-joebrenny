@@ -17,7 +17,7 @@ namespace Project_Two
             //filepath is a functiont to find file path on his computer
         {
             const string PATH = @"C:\Users\brejosj\Desktop\spring2020\advancedPrograming\superBowl\Project_Two\Super_Bowl_Project.csv";
-
+            List<SuperYear> sblist = new List<SuperYear>();
             FileStream input;
             StreamReader read;
             string line;
@@ -41,7 +41,7 @@ namespace Project_Two
             {
                 input = new FileStream(PATH, FileMode.Open, FileAccess.Read);
                 read = new StreamReader(input);
-                List<SuperYear> sblist = new List<SuperYear>();
+                //List<SuperYear> sblist = new List<SuperYear>();
                                             //.Skip(1);
                                           //.Select(v => sblist.SuperYear(v));
                                             //.Tolist;
@@ -61,22 +61,39 @@ namespace Project_Two
                 }
                 //checking to make sure that my data is objects
                 sblist.ForEach(x => Console.WriteLine(x.ToString()));
-                
+                read.Close();
+                read.Dispose();
             }
             catch(Exception e)
             {
                 Console.WriteLine(e.Message);
             }
             //superbolw winners write
-            using (StreamWriter file = File.CreateText("test.txt"))
+            //using (StreamWriter file = File.CreateText("test.txt"))
+            FileStream output = new FileStream(@"C:\Users\brejosj\Desktop\spring2020\advancedPrograming\superBowl\Project_Two\test.txt", FileMode.Create, FileAccess.Write);
+            StreamWriter write = new StreamWriter(output);
+
+            //looping through the objects 
+            write.WriteLine("Question One \t\t team name \t\t year team won \t\t winning QB \t\t" +
+                "WINNING Coach \t\t MVP \t\t points difference winning - losing points");
+
+            foreach(SuperYear x in sblist)
             {
-                Console.WriteLine("\n QUESTION ONE");
-                file.WriteLine("\n QUestion 1 SUPER BOWL WINNERS");
-
-                file.WriteLine("TEAM NAME" + "\t\t" + "Year WON" + "\t\t"+ "WINNING QB"+" \t\t"+
-                   "WINNING Coach" + "\t\t" + "MVP" + "point difference");
+                //write out each record
+                write.WriteLine($"{x.winningTeam}, {x.date}, {x.qb_Winner}");
             }
+            write.Close();
+            output.Close();
 
+            //________________________________________
+            //{
+            //    Console.WriteLine("\n QUESTION ONE");
+            //    file.WriteLine("\n QUestion 1 SUPER BOWL WINNERS");
+
+            //    file.WriteLine("TEAM NAME" + "\t\t" + "Year WON" + "\t\t"+ "WINNING QB"+" \t\t"+
+            //       "WINNING Coach" + "\t\t" + "MVP" + "point difference");
+            //}
+            //________________________________________
             //List<object> listOfSuperBowl = new List<object>();
 
             //var listOfSuperBowls = File.ReadLines(PATH).Select(line => new SuperYear(line)).ToList();

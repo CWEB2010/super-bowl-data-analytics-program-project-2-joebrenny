@@ -1,0 +1,55 @@
+Question One 		 team name 		 year team won 		 winning QB 		WINNING Coach 		 MVP 		 points difference winning - losing points
+Green Bay Packers, 15-Jan-67, Bart Starr
+Green Bay Packers, 14-Jan-68, Bart Starr
+New York Jets, 12-Jan-69, Joe Namath
+Kansas City Chiefs, 11-Jan-70, Len Dawson  Mike Livingston
+Baltimore Colts, 17-Jan-71, Earl Morrall  Johnny Unitas
+Dallas Cowboys, 16-Jan-72, Roger Staubach
+Miami Dolphins, 14-Jan-73, Bob Griese
+Miami Dolphins, 13-Jan-74, Bob Griese
+Pittsburgh Steelers, 12-Jan-75, Terry Bradshaw
+Pittsburgh Steelers, 18-Jan-76, Terry Bradshaw
+Oakland Raiders, 9-Jan-77, Kenny Stabler
+Dallas Cowboys, 15-Jan-78, Roger Staubach
+Pittsburgh Steelers, 21-Jan-79, Terry Bradshaw
+Pittsburgh Steelers, 20-Jan-80, Terry Bradshaw
+Oakland Raiders, 25-Jan-81, Jim Plunkett
+San Francisco 49ers, 24-Jan-82, Joe Montana
+Washington Redskins, 30-Jan-83, Joe Theismann
+Los Angeles Raiders, 22-Jan-84, Jim Plunkett
+San Francisco 49ers, 20-Jan-85, Joe Montano
+Chicago Bears, 26-Jan-86, Jim McMahon
+New York Giants, 25-Jan-87, Phil Simms
+Washington Redskins, 31-Jan-88, Doug Williams
+San Francisco 49ers, 22-Jan-89, Joe Montana
+San Francisco 49ers, 28-Jan-90, Joe Montana
+New York Giants, 27-Jan-91, Jeff Hostetler
+Washington Redskins, 26-Jan-92, Mark Rypien
+Dallas Cowboys, 31-Jan-93, Troy Aikman
+Dallas Cowboys, 30-Jan-94, Troy Aikman
+San Francisco 49ers, 29-Jan-95, Steve Young
+Dallas Cowboys, 28-Jan-96, Troy Aikman
+Green Bay Packers, 26-Jan-97, Brett Favre
+Denver Broncos, 25-Jan-98, John Elway
+Denver Broncos, 31-Jan-99, John Elway
+St. Louis Rams, 30-Jan-00, Kurt Warner
+Baltimore Ravens, 28-Jan-01, Trent Dilfer
+New England Patriots, 3-Feb-02, Tom Brady
+Tampa Bay Buccaneers, 26-Jan-03, Brad Johnson
+New England Patriots, 1-Feb-04, Tom Brady
+New England Patriots, 6-Feb-05, Tom Brady
+Pittsburgh Steelers, 5-Feb-06, Ben Roethlisberger
+Indianapolis Colts, 4-Feb-07, Peyton Manning
+New York Giants, 3-Feb-08, Eli Manning
+Pittsburgh Steelers, 1-Feb-09, Ben Roethlisberger
+New Orleans Saints, 7-Feb-10, Drew Brees
+Green Bay Packers, 6-Feb-11, Aaron Rodgers
+New York Giants, 5-Feb-12, Eli Manning
+Baltimore Ravens, 3-Feb-13, Joe Flacco
+Seattle Seahawks, 2-Feb-14, Russell Wilson
+New England Patriots, 1-Feb-15, Tom Brady
+Denver Broncos, 7-Feb-16, Peyton Manning
+New England Patriots, 5-Feb-17, Tom Brady
+Philadelphia Eagles, 4-Feb-18, Nick Foles
+New England Patriots, 3-Feb-19, Tom Brady
+Kansas City Chiefs, 2-Feb-20, Patrick Mahomes
