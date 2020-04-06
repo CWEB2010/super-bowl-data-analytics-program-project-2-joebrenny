@@ -1,55 +1,89 @@
-Question One 		 team name 		 year team won 		 winning QB 		WINNING Coach 		 MVP 		 points difference winning - losing points
-Green Bay Packers, 15-Jan-67, Bart Starr
-Green Bay Packers, 14-Jan-68, Bart Starr
-New York Jets, 12-Jan-69, Joe Namath
-Kansas City Chiefs, 11-Jan-70, Len Dawson  Mike Livingston
-Baltimore Colts, 17-Jan-71, Earl Morrall  Johnny Unitas
-Dallas Cowboys, 16-Jan-72, Roger Staubach
-Miami Dolphins, 14-Jan-73, Bob Griese
-Miami Dolphins, 13-Jan-74, Bob Griese
-Pittsburgh Steelers, 12-Jan-75, Terry Bradshaw
-Pittsburgh Steelers, 18-Jan-76, Terry Bradshaw
-Oakland Raiders, 9-Jan-77, Kenny Stabler
-Dallas Cowboys, 15-Jan-78, Roger Staubach
-Pittsburgh Steelers, 21-Jan-79, Terry Bradshaw
-Pittsburgh Steelers, 20-Jan-80, Terry Bradshaw
-Oakland Raiders, 25-Jan-81, Jim Plunkett
-San Francisco 49ers, 24-Jan-82, Joe Montana
-Washington Redskins, 30-Jan-83, Joe Theismann
-Los Angeles Raiders, 22-Jan-84, Jim Plunkett
-San Francisco 49ers, 20-Jan-85, Joe Montano
-Chicago Bears, 26-Jan-86, Jim McMahon
-New York Giants, 25-Jan-87, Phil Simms
-Washington Redskins, 31-Jan-88, Doug Williams
-San Francisco 49ers, 22-Jan-89, Joe Montana
-San Francisco 49ers, 28-Jan-90, Joe Montana
-New York Giants, 27-Jan-91, Jeff Hostetler
-Washington Redskins, 26-Jan-92, Mark Rypien
-Dallas Cowboys, 31-Jan-93, Troy Aikman
-Dallas Cowboys, 30-Jan-94, Troy Aikman
-San Francisco 49ers, 29-Jan-95, Steve Young
-Dallas Cowboys, 28-Jan-96, Troy Aikman
-Green Bay Packers, 26-Jan-97, Brett Favre
-Denver Broncos, 25-Jan-98, John Elway
-Denver Broncos, 31-Jan-99, John Elway
-St. Louis Rams, 30-Jan-00, Kurt Warner
-Baltimore Ravens, 28-Jan-01, Trent Dilfer
-New England Patriots, 3-Feb-02, Tom Brady
-Tampa Bay Buccaneers, 26-Jan-03, Brad Johnson
-New England Patriots, 1-Feb-04, Tom Brady
-New England Patriots, 6-Feb-05, Tom Brady
-Pittsburgh Steelers, 5-Feb-06, Ben Roethlisberger
-Indianapolis Colts, 4-Feb-07, Peyton Manning
-New York Giants, 3-Feb-08, Eli Manning
-Pittsburgh Steelers, 1-Feb-09, Ben Roethlisberger
-New Orleans Saints, 7-Feb-10, Drew Brees
-Green Bay Packers, 6-Feb-11, Aaron Rodgers
-New York Giants, 5-Feb-12, Eli Manning
-Baltimore Ravens, 3-Feb-13, Joe Flacco
-Seattle Seahawks, 2-Feb-14, Russell Wilson
-New England Patriots, 1-Feb-15, Tom Brady
-Denver Broncos, 7-Feb-16, Peyton Manning
-New England Patriots, 5-Feb-17, Tom Brady
-Philadelphia Eagles, 4-Feb-18, Nick Foles
-New England Patriots, 3-Feb-19, Tom Brady
-Kansas City Chiefs, 2-Feb-20, Patrick Mahomes
+Question One
+
+ 		 team name 		 year team won 		 winning QB 		WINNING Coach 		 MVP 		 points difference winning - losing points
+			Green Bay Packers,	 15-Jan-67,	 Bart Starr,	 Vince Lombardi, 25
+			Green Bay Packers,	 14-Jan-68,	 Bart Starr,	 Vince Lombardi, 19
+			New York Jets,	 12-Jan-69,	 Joe Namath,	 Weeb Ewbank, 9
+			Kansas City Chiefs,	 11-Jan-70,	 Len Dawson  Mike Livingston,	 Hank Stram, 16
+			Baltimore Colts,	 17-Jan-71,	 Earl Morrall  Johnny Unitas,	 Don McCafferty, 3
+			Dallas Cowboys,	 16-Jan-72,	 Roger Staubach,	 Tom Landry, 21
+			Miami Dolphins,	 14-Jan-73,	 Bob Griese,	 Don Shula, 7
+			Miami Dolphins,	 13-Jan-74,	 Bob Griese,	 Don Shula, 17
+			Pittsburgh Steelers,	 12-Jan-75,	 Terry Bradshaw,	 Chuck Noll , 10
+			Pittsburgh Steelers,	 18-Jan-76,	 Terry Bradshaw,	 Chuck Noll , 4
+			Oakland Raiders,	 9-Jan-77,	 Kenny Stabler,	 John Madden, 18
+			Dallas Cowboys,	 15-Jan-78,	 Roger Staubach,	 Tom Landry, 17
+			Pittsburgh Steelers,	 21-Jan-79,	 Terry Bradshaw,	 Chuck Noll, 4
+			Pittsburgh Steelers,	 20-Jan-80,	 Terry Bradshaw,	 Chuck Noll, 12
+			Oakland Raiders,	 25-Jan-81,	 Jim Plunkett,	 Tom Flores, 17
+			San Francisco 49ers,	 24-Jan-82,	 Joe Montana,	 Bill Walsh, 5
+			Washington Redskins,	 30-Jan-83,	 Joe Theismann,	 Joe Gibbs, 10
+			Los Angeles Raiders,	 22-Jan-84,	 Jim Plunkett,	 Tom Flores, 29
+			San Francisco 49ers,	 20-Jan-85,	 Joe Montano,	 Bill Walsh, 22
+			Chicago Bears,	 26-Jan-86,	 Jim McMahon,	 Mike Ditka, 36
+			New York Giants,	 25-Jan-87,	 Phil Simms,	 Bill Parcells, 19
+			Washington Redskins,	 31-Jan-88,	 Doug Williams,	 Joe Gibbs, 32
+			San Francisco 49ers,	 22-Jan-89,	 Joe Montana,	 Bill Walsh, 4
+			San Francisco 49ers,	 28-Jan-90,	 Joe Montana,	 George Seifert, 45
+			New York Giants,	 27-Jan-91,	 Jeff Hostetler,	 Bill Parcells, 1
+			Washington Redskins,	 26-Jan-92,	 Mark Rypien,	 Joe Gibbs, 13
+			Dallas Cowboys,	 31-Jan-93,	 Troy Aikman,	 Jimmy Johnson, 35
+			Dallas Cowboys,	 30-Jan-94,	 Troy Aikman,	 Jimmy Johnson, 17
+			San Francisco 49ers,	 29-Jan-95,	 Steve Young,	 George Seifert, 23
+			Dallas Cowboys,	 28-Jan-96,	 Troy Aikman,	 Barry Switzer, 10
+			Green Bay Packers,	 26-Jan-97,	 Brett Favre,	 Mike Holmgren, 14
+			Denver Broncos,	 25-Jan-98,	 John Elway,	 Mike Shanahan, 7
+			Denver Broncos,	 31-Jan-99,	 John Elway,	 Mike Shanahan, 15
+			St. Louis Rams,	 30-Jan-00,	 Kurt Warner,	 Dick Vermeil, 7
+			Baltimore Ravens,	 28-Jan-01,	 Trent Dilfer,	 Brian Billick, 27
+			New England Patriots,	 3-Feb-02,	 Tom Brady,	 Bill Belichick, 3
+			Tampa Bay Buccaneers,	 26-Jan-03,	 Brad Johnson,	 Jon Gruden, 27
+			New England Patriots,	 1-Feb-04,	 Tom Brady,	 Bill Belichick, 3
+			New England Patriots,	 6-Feb-05,	 Tom Brady,	 Bill Belichick, 3
+			Pittsburgh Steelers,	 5-Feb-06,	 Ben Roethlisberger,	 Bill Cowher, 11
+			Indianapolis Colts,	 4-Feb-07,	 Peyton Manning,	 Tony Dungy, 12
+			New York Giants,	 3-Feb-08,	 Eli Manning,	 Tom Coughlin, 3
+			Pittsburgh Steelers,	 1-Feb-09,	 Ben Roethlisberger,	 Mike Tomlin, 4
+			New Orleans Saints,	 7-Feb-10,	 Drew Brees,	 Sean Payton, 14
+			Green Bay Packers,	 6-Feb-11,	 Aaron Rodgers,	 Mike McCarthy, 6
+			New York Giants,	 5-Feb-12,	 Eli Manning,	 Tom Coughlin, 4
+			Baltimore Ravens,	 3-Feb-13,	 Joe Flacco,	 John Harbaugh, 3
+			Seattle Seahawks,	 2-Feb-14,	 Russell Wilson,	 Pete Carroll, 35
+			New England Patriots,	 1-Feb-15,	 Tom Brady,	 Bill Belichick, 4
+			Denver Broncos,	 7-Feb-16,	 Peyton Manning,	 Gary Kubiak, 14
+			New England Patriots,	 5-Feb-17,	 Tom Brady,	 Bill Belichick, 6
+			Philadelphia Eagles,	 4-Feb-18,	 Nick Foles,	 Doug Pederson, 8
+			New England Patriots,	 3-Feb-19,	 Tom Brady,	 Bill Belichick, 10
+			Kansas City Chiefs,	 2-Feb-20,	 Patrick Mahomes,	 Andy Reid, 11
+Question 2 
+
+Year 	 Winning Team 		 Lossing Team 		 City 		 State 		 Staduim 
+
+103985, 20-Jan-80, Pittsburgh Steelers, Los Angeles Rams, Pasadena, California, Rose Bowl 
+103667, 30-Jan-83, Washington Redskins, Miami Dolphins, Pasadena, California, Rose Bowl 
+103438, 9-Jan-77, Oakland Raiders, Minnesota Vikings, Pasadena, California, Rose Bowl 
+103219, 6-Feb-11, Green Bay Packers, Pittsburgh Steelers, Arlington, Texas, Cowboys Stadium 
+101063, 25-Jan-87, New York Giants, Denver Broncos, Pasadena, California, Rose Bowl 
+Question 3 
+
+City 	 STATE 		 Stadium  
+
+33Miami, Florida, Orange Bowl
+33Miami, Florida, Orange Bowl
+33Miami, Florida, Orange Bowl
+33Miami, Florida, Orange Bowl
+33Miami, Florida, Orange Bowl
+33Tampa, Florida, Tampa Stadium
+33Miami Gardens, Florida, Joe Robbie Stadium
+33Tampa, Florida, Tampa Stadium
+33Miami Gardens, Florida, Joe Robbie Stadium
+33Miami Gardens, Florida, Pro Player Stadium
+33Tampa, Florida, Raymond James Stadium
+
+
+Player who havev more than one MVP
+Bart Starr, has 2 MVPS
+Eli Manning, has 2 MVPS
+Joe Montana, has 3 MVPS
+Terry Bradshaw, has 2 MVPS
+Tom Brady, has 4 MVPS

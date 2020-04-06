@@ -74,14 +74,84 @@ namespace Project_Two
             StreamWriter write = new StreamWriter(output);
 
             //looping through the objects 
-            write.WriteLine("Question One \t\t team name \t\t year team won \t\t winning QB \t\t" +
+            write.WriteLine("Question One\n");
+            write.WriteLine(" \t\t team name \t\t year team won \t\t winning QB \t\t" +
                 "WINNING Coach \t\t MVP \t\t points difference winning - losing points");
 
             foreach(SuperYear x in sblist)
             {
                 //write out each record
-                write.WriteLine($"{x.winningTeam}, {x.date}, {x.qb_Winner}");
+                write.WriteLine($"\t\t\t{x.winningTeam},\t {x.date},\t {x.qb_Winner},\t {x.coachWinner}, {(x.winningPoints-x.loserPoints)}");
             }
+
+            //top 5 attendance________________________________________________
+            List<SuperYear> attendanceList = sblist.OrderByDescending(SuperYear => SuperYear.attendance).Take(5).ToList();
+                write.WriteLine($"Question 2 \n");
+            write.WriteLine($"Year \t Winning Team \t\t Lossing Team \t\t City \t\t State \t\t Staduim \n");
+            foreach(SuperYear x in attendanceList)
+            {
+                Console.WriteLine($"{x.attendance},{x.date}, {x.winningTeam}, {x.teamLoser}, {x.city}, {x.state}, {x.stadium} ");
+                
+                write.WriteLine($"{x.attendance}, {x.date}, {x.winningTeam}, {x.teamLoser}, {x.city}, {x.state}, {x.stadium} ");
+
+            }
+            //state that has the most hosted superbowl
+            List<SuperYear> state = sblist.OrderBy(SuperYear => SuperYear.state)/*.Take(11)*/.ToList();
+            var mstate = sblist.GroupBy(x => x.state)
+                .OrderByDescending(g => g.Count())
+                .SelectMany(g =>g).Take(11).ToList();
+            //Console.WriteLine(mstate.  ); 
+
+            //var groups = sblist.GroupBy(x => x);
+            //var moststate = groups.OrderByDescending(x => x.Count()).First();
+            //Console.WriteLine(largest.Key,);
+            write.WriteLine($"Question 3 \n");
+            write.WriteLine($"City \t STATE \t\t Stadium  \n");
+            //+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            //var stateqry = from staterec in state
+            //               group staterec by new
+            //               {
+            //                   staterec.state
+            //               }
+            //               into groupsstate
+            //               from cityg in
+            //               (from city in groupsstate
+            //                orderby city.city, city.date descending, city.stadium
+            //                group city by new { city.city })
+            //               orderby groupsstate.Key.state
+            //               group cityg by new { groupsstate.Key.state };
+            //foreach(var outergroup in stateqry)
+            //{
+            //    Console.WriteLine($"0000{outergroup.Key.state}");
+            //    write.WriteLine($"0000{outergroup.Key.state}");
+
+            //}
+            //_________________________________________________________________
+            //mstate.ForEach(x => write.WriteLine(x.ToString()));
+
+            foreach (SuperYear x in mstate)
+            {
+                Console.WriteLine($"33{x.state}, {x.city}, {x.stadium}");
+
+                write.WriteLine($"33{x.city}, {x.state}, {x.stadium}");
+
+            }
+            //make list of players who won mvp more than once 
+            List<SuperYear> mvplist = sblist.OrderBy(SuperYear => SuperYear.mvp)/*.Take(11)*/.ToList();
+            write.WriteLine($"\n\nPlayer who havev more than one MVP\n");
+
+            var mvpcount = from x in sblist
+                           group x by x.mvp into MVPGROUP
+                           where MVPGROUP.Count() >= 2
+                           orderby MVPGROUP.Key
+                           select MVPGROUP;
+            foreach(var x in mvpcount)
+            {
+                write.WriteLine($"{x.Key}, has {x.Count()} MVPS");
+            }
+            //Which coach lost the most super bowls?
+
+
             write.Close();
             output.Close();
 
