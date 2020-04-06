@@ -82,8 +82,42 @@ City 	 STATE 		 Stadium
 
 
 Player who havev more than one MVP
+
 Bart Starr, has 2 MVPS
 Eli Manning, has 2 MVPS
 Joe Montana, has 3 MVPS
 Terry Bradshaw, has 2 MVPS
 Tom Brady, has 4 MVPS
+
+
+ 1.  which coach lost the most superbowls????
+
+Don Shula lost  4 superbowls
+Bud Grant lost  4 superbowls
+Dan Reeves lost  4 superbowls
+Marv Levy lost  4 superbowls
+
+
+2.   which coach won the most superbowls????
+
+Bill Belichick won  6 superbowls
+
+
+3.  Which team(s) won the most super bowls???
+
+Pittsburgh Steelers won  6 superbowls
+
+New England Patriots won  6 superbowls
+
+4.  Which team(s) won the most super bowls???
+
+Denver Broncos lost  5 superbowls
+
+New England Patriots lost  5 superbowls
+
+5.  Which Super bowl had the greatest point difference????
+
+superbowl XXIV had a spread of 45
+6.  What is the average attendance of all super bowls?????
+
+the average attendance is 77040.8703703704

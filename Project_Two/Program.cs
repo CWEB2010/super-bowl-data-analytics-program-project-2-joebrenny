@@ -149,7 +149,91 @@ namespace Project_Two
             {
                 write.WriteLine($"{x.Key}, has {x.Count()} MVPS");
             }
+
             //Which coach lost the most super bowls?
+            write.WriteLine($"\n\n 1.  which coach lost the most superbowls????\n");
+            var coachLoss = from z in sblist
+                            .GroupBy(z => z.coachLoser)
+                            select new
+                            {
+                                z.Key,
+                                most = z.Count()
+                            };
+            foreach(var z in coachLoss)
+            {
+                if(z.most == coachLoss.Max( x => x.most))
+                {
+                    write.WriteLine($"{z.Key} lost  {z.most} superbowls");
+                }
+            }
+            // find the coachs that won the most su0er bowls????
+            write.WriteLine($"\n\n2.   which coach won the most superbowls????\n");
+            var coachWin = from t in sblist
+                           .GroupBy(t => t.coachWinner)
+                           select new
+                           {
+                               t.Key,
+                               Most = t.Count()
+                           };
+            foreach (var t in coachWin)
+            {
+                if(t.Most == coachWin.Max (x => x.Most))
+                {
+                    write.WriteLine($"{t.Key} won  {t.Most} superbowls\n\n");
+                }
+            }
+            //Which team(s) won the most super bowls?
+            write.WriteLine($"3.  Which team(s) won the most super bowls???\n");
+            var teamWin = from x in sblist
+                          .GroupBy(x => x.winningTeam)
+                          select new
+                          {
+                              x.Key,
+                              Most = x.Count()
+                          };
+            foreach (var x in teamWin)
+            {
+                if (x.Most == teamWin.Max(y => y.Most))
+                {
+                    write.WriteLine($"{x.Key} won  {x.Most} superbowls\n");
+                }
+            }
+            //Which team(s) lost the most super bowls?
+            write.WriteLine($"4.  Which team(s) won the most super bowls???\n");
+            var teamloss = from x in sblist
+                          .GroupBy(x => x.teamLoser)
+                          select new
+                          {
+                              x.Key,
+                              Most = x.Count()
+                          };
+            foreach (var x in teamloss)
+            {
+                if (x.Most == teamloss.Max(y => y.Most))
+                {
+                    write.WriteLine($"{x.Key} lost  {x.Most} superbowls\n");
+                }
+            }
+            //Which Super bowl had the greatest point difference?
+            write.WriteLine($"5.  Which Super bowl had the greatest point difference????\n");
+            var pointdiff = from x in sblist
+                            select new
+                            {
+                                x.sbNum,
+                                Most = Math.Abs(x.winningPoints - x.loserPoints)
+                            };
+            foreach(var x in pointdiff)
+            {
+                if(x.Most == pointdiff.Max(y=> y.Most))
+                {
+                    write.WriteLine($"superbowl {x.sbNum} had a spread of {x.Most}");
+                }
+            }
+            //What is the average attendance of all super bowls?
+            write.WriteLine($"6.  What is the average attendance of all super bowls?????\n");
+            var avrage = sblist.Select(x => x.attendance).Average();
+            write.WriteLine($"the average attendance is {avrage}");
+
 
 
             write.Close();
