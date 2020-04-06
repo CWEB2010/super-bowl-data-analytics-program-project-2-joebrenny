@@ -16,25 +16,26 @@ namespace Project_Two
         static void Main(string[] args)
             //filepath is a functiont to find file path on his computer
         {
-            const string PATH = @"C:\Users\brejosj\Desktop\spring2020\advancedPrograming\superBowl\Project_Two\Super_Bowl_Project.csv";
+            string path = "";
+             
             List<SuperYear> sblist = new List<SuperYear>();
             FileStream input;
             StreamReader read;
             string line;
             string[] data;
-            string path = "";
+            
             string textFile = "";
             // intro
            Console.WriteLine("welcome to the super bowl porgram");
             //finding the file for the cvs
-            Console.WriteLine("What file path extension would like to read in (.cvs)");
+            Console.WriteLine("What file that you would like to read in (.cvs)");
             string Path = Console.ReadLine();
             Console.WriteLine(textFile);
 
-            Console.WriteLine("\nWhat file path do you want it to be written in (.txt)");
-             path = @Console.ReadLine();
-            Console.WriteLine(path);
-
+            Console.WriteLine("\nWhat ffile you would like to be writen in  (.txt)");
+             textFile = @Console.ReadLine();
+            Console.WriteLine(textFile);
+            string PATH = $@"C:\Users\brejosj\Desktop\spring2020\advancedPrograming\superBowl\Project_Two\{Path}";
 
 
             try
@@ -70,7 +71,7 @@ namespace Project_Two
             }
             //superbolw winners write
             //using (StreamWriter file = File.CreateText("test.txt"))
-            FileStream output = new FileStream(@"C:\Users\brejosj\Desktop\spring2020\advancedPrograming\superBowl\Project_Two\test.txt", FileMode.Create, FileAccess.Write);
+            FileStream output = new FileStream($@"C:\Users\brejosj\Desktop\spring2020\advancedPrograming\superBowl\Project_Two\{textFile}", FileMode.Create, FileAccess.Write);
             StreamWriter write = new StreamWriter(output);
 
             //looping through the objects 
