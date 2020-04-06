@@ -61,7 +61,7 @@ namespace Project_Two
                     //   ,data[14]));
                 }
                 //checking to make sure that my data is objects
-                sblist.ForEach(x => Console.WriteLine(x.ToString()));
+                //sblist.ForEach(x => Console.WriteLine(x.ToString()));
                 read.Close();
                 read.Dispose();
             }
@@ -91,7 +91,7 @@ namespace Project_Two
             write.WriteLine($"Year \t Winning Team \t\t Lossing Team \t\t City \t\t State \t\t Staduim \n");
             foreach(SuperYear x in attendanceList)
             {
-                Console.WriteLine($"{x.attendance},{x.date}, {x.winningTeam}, {x.teamLoser}, {x.city}, {x.state}, {x.stadium} ");
+                //Console.WriteLine($"{x.attendance},{x.date}, {x.winningTeam}, {x.teamLoser}, {x.city}, {x.state}, {x.stadium} ");
                 
                 write.WriteLine($"{x.attendance}, {x.date}, {x.winningTeam}, {x.teamLoser}, {x.city}, {x.state}, {x.stadium} ");
 
@@ -132,7 +132,7 @@ namespace Project_Two
 
             foreach (SuperYear x in mstate)
             {
-                Console.WriteLine($"33{x.state}, {x.city}, {x.stadium}");
+                //Console.WriteLine($"33{x.state}, {x.city}, {x.stadium}");
 
                 write.WriteLine($"33{x.city}, {x.state}, {x.stadium}");
 
